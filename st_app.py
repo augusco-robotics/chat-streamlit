@@ -5,9 +5,9 @@ st.set_page_config(page_title="Chatbot Interface")
 st.title("🤖 Augusco Chat App")
 
 # FastAPI endpoint URLs
-CHAT_URL = "http://127.0.0.1:8000/chat"
-ADD_QUESTION_URL = "http://127.0.0.1:8000/add_question"
-UPDATE_ANSWER_URL = "http://127.0.0.1:8000/update_answer"
+CHAT_URL = "http://192.168.182.70:8000/chat"
+ADD_QUESTION_URL = "http://192.168.182.70:8000/add_question"
+UPDATE_ANSWER_URL = "http://192.168.182.70:8000/update_answer"
 
 if "messages" not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
